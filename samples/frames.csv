@@ -1,0 +1,6 @@
+round,frame,area,stratum,codes,cost,kind,capacity,cutoff
+R1,F1,metro,A-unknown,G02|G03|G12,2,random,2,2026-09-22
+R1,F2,outer,BC-unknown,G05|G06|G07|G08|G09|G10|G11,1,random,3,2026-09-22
+R1,F3,metro,dispute,G03,1,mandatory,1,2026-09-22
+R2,F4,metro,A-unknown,G02|G04|G12,2,random,2,2026-09-26
+R2,F5,outer,BC-unknown,G03|G05|G06|G08|G09|G10|G11,1,random,4,2026-09-26

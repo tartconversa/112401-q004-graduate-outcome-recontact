@@ -1,0 +1,7 @@
+visit,round,frame,code,kind,numer,denom,dispatched,reply,replied
+V1,R1,F1,G03,random,2,3,2026-09-23,unreachable,2026-09-25
+V2,R1,F2,G05,random,3,7,2026-09-23,already-replied,2026-09-24
+V3,R1,F2,G08,random,3,7,2026-09-23,reachable-no-proof,2026-09-25
+V4,R1,F2,G10,random,3,7,2026-09-23,reachable-no-work,2026-09-26
+V5,R1,F3,G03,mandatory,,,2026-09-23,needs-link,2026-09-25
+V6,R1,F1,G12,random,2,3,2026-09-23,reachable-no-proof,2026-09-27

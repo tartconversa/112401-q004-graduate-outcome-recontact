@@ -1,0 +1,7 @@
+mapping,external,student,relation,asof,applies_to
+M1,S-A01,G01,distinct,2026-09-01,all
+M2,P-B31,G03,distinct,2026-09-01,all
+M3,S-A51,G05,distinct,2026-09-01,all
+M4,S-C07,G07,distinct,2026-09-01,all
+M5,S-A51,G03,duplicate,2026-09-25,R1|R2
+M6,S-A52,G05,distinct,2026-09-25,R2
