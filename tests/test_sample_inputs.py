@@ -5,7 +5,7 @@ import unittest
 
 INPUTS = Path(__file__).resolve().parent.parent / "samples"
 
-HEADERS = {'register': ('student', 'school_options', 'program', 'graduated', 'main_status', 'version'), 'crosswalk': ('mapping', 'external', 'student', 'relation', 'asof', 'applies_to'), 'outcomes': ('evidence', 'external', 'source', 'start', 'end', 'hours', 'income', 'studies', 'received'), 'policies': ('policy', 'area', 'window_days', 'days', 'threshold_hours', 'threshold_income'), 'frames': ('round', 'frame', 'area', 'stratum', 'codes', 'cost', 'kind', 'capacity', 'cutoff'), 'visits': ('visit', 'round', 'frame', 'code', 'kind', 'numer', 'denom', 'dispatched', 'reply', 'replied')}
+HEADERS = {'register': ('student', 'school_options', 'program', 'graduated', 'main_status', 'version', 'received'), 'crosswalk': ('mapping', 'external', 'student', 'relation', 'asof', 'applies_to'), 'outcomes': ('evidence', 'external', 'source', 'start', 'end', 'hours', 'income', 'studies', 'received'), 'policies': ('policy', 'area', 'window_days', 'days', 'threshold_hours', 'threshold_income'), 'frames': ('round', 'frame', 'area', 'stratum', 'codes', 'cost', 'kind', 'capacity', 'cutoff'), 'visits': ('visit', 'round', 'frame', 'code', 'kind', 'numer', 'denom', 'dispatched', 'reply', 'replied'), 'schools': ('school', 'area')}
 REFERENCES = [('outcomes', 'external', 'crosswalk', 'external'), ('visits', 'frame', 'frames', 'frame'), ('frames', 'codes', 'register', 'student')]
 EXAMPLES = [['register', 'student', 'G03', 2], ['visits', 'code', 'G03', 2], ['frames', 'round', 'R2', 2]]
 
