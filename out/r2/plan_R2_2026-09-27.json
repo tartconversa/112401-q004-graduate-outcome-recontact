@@ -1,0 +1,273 @@
+{
+  "round": "R2",
+  "budget": 9,
+  "mandatory_reserved": 0,
+  "random_budget": 9,
+  "allocation_trace": [
+    "向 F4（A-unknown，优先级 0.6875）拨 1 次，累计 1/2",
+    "向 F4（A-unknown，优先级 0.6875）拨 1 次，累计 2/2",
+    "向 F5（BC-unknown，优先级 0.5）拨 1 次，累计 1/4",
+    "向 F5（BC-unknown，优先级 0.5）拨 1 次，累计 2/4",
+    "向 F5（BC-unknown，优先级 0.5）拨 1 次，累计 3/4",
+    "余额 2：各群组或达容量、或已无未覆盖的合格联系人，停止（余额不强行摊派，避免对已覆盖者重复联系）"
+  ],
+  "strata": [
+    {
+      "frame": "F4",
+      "stratum": "A-unknown",
+      "kind": "random",
+      "cost_per_contact": 2,
+      "capacity": 2,
+      "frame_size": 3,
+      "uncovered_in_frame": [
+        "G02",
+        "G04",
+        "G12"
+      ],
+      "already_drawn": [],
+      "eligible_for_redraw": [
+        "G02",
+        "G04"
+      ],
+      "impact_score": 1.0,
+      "efficiency_score": 0.375,
+      "priority": 0.6875,
+      "recommended_draws": 2,
+      "budget_used": 4,
+      "planned_probability_note": "条件机会 = 2/2，仅对上一轮未抽中者成立；最终覆盖按条件过程合成"
+    },
+    {
+      "frame": "F5",
+      "stratum": "BC-unknown",
+      "kind": "random",
+      "cost_per_contact": 1,
+      "capacity": 4,
+      "frame_size": 7,
+      "uncovered_in_frame": [
+        "G06",
+        "G08",
+        "G09",
+        "G11"
+      ],
+      "already_drawn": [],
+      "eligible_for_redraw": [
+        "G06",
+        "G09",
+        "G11"
+      ],
+      "impact_score": 0.0,
+      "efficiency_score": 1.0,
+      "priority": 0.5,
+      "recommended_draws": 3,
+      "budget_used": 3,
+      "planned_probability_note": "条件机会 = 3/3，仅对上一轮未抽中者成立；最终覆盖按条件过程合成"
+    }
+  ],
+  "skipped": [],
+  "planned_inclusion_table": [
+    {
+      "student": "G02",
+      "through_round": "R2",
+      "r2_design": "exclusion",
+      "steps": [
+        {
+          "round": "R1",
+          "frame": "F1",
+          "conditional_probability": 0.0,
+          "note": "该轮框架内未被抽中且无派单计划"
+        },
+        {
+          "round": "R2",
+          "frame": "F4",
+          "conditional_probability": 1.0,
+          "formula": "P(R2)= 2/2，仅在上一轮未抽中时成立"
+        }
+      ],
+      "cumulative_inclusion_probability": 1.0,
+      "never_selected_probability": 0.0
+    },
+    {
+      "student": "G04",
+      "through_round": "R2",
+      "r2_design": "exclusion",
+      "steps": [
+        {
+          "round": "R2",
+          "frame": "F4",
+          "conditional_probability": 1.0,
+          "formula": "P(R2)= 2/2，仅在上一轮未抽中时成立"
+        }
+      ],
+      "cumulative_inclusion_probability": 1.0,
+      "never_selected_probability": 0.0
+    },
+    {
+      "student": "G12",
+      "through_round": "R2",
+      "r2_design": "exclusion",
+      "steps": [
+        {
+          "round": "R1",
+          "frame": "F1",
+          "conditional_probability": 0.6666666666666666,
+          "note": "已通知复访，抽中机会 2/3"
+        },
+        {
+          "round": "R2",
+          "frame": "F4",
+          "conditional_probability": 0.0,
+          "formula": "上一轮已被随机抽中，本轮条件机会为 0"
+        }
+      ],
+      "cumulative_inclusion_probability": 0.6666666666666666,
+      "never_selected_probability": 0.33333333333333337
+    },
+    {
+      "student": "G03",
+      "through_round": "R2",
+      "r2_design": "exclusion",
+      "steps": [
+        {
+          "round": "R1",
+          "frame": "F1",
+          "conditional_probability": 0.6666666666666666,
+          "note": "已通知复访，抽中机会 2/3"
+        },
+        {
+          "round": "R2",
+          "frame": "F5",
+          "conditional_probability": 0.0,
+          "formula": "上一轮已被随机抽中，本轮条件机会为 0"
+        }
+      ],
+      "cumulative_inclusion_probability": 0.6666666666666666,
+      "never_selected_probability": 0.33333333333333337
+    },
+    {
+      "student": "G05",
+      "through_round": "R2",
+      "r2_design": "exclusion",
+      "steps": [
+        {
+          "round": "R1",
+          "frame": "F2",
+          "conditional_probability": 0.42857142857142855,
+          "note": "已通知复访，抽中机会 3/7"
+        },
+        {
+          "round": "R2",
+          "frame": "F5",
+          "conditional_probability": 0.0,
+          "formula": "上一轮已被随机抽中，本轮条件机会为 0"
+        }
+      ],
+      "cumulative_inclusion_probability": 0.4285714285714286,
+      "never_selected_probability": 0.5714285714285714
+    },
+    {
+      "student": "G06",
+      "through_round": "R2",
+      "r2_design": "exclusion",
+      "steps": [
+        {
+          "round": "R1",
+          "frame": "F2",
+          "conditional_probability": 0.0,
+          "note": "该轮框架内未被抽中且无派单计划"
+        },
+        {
+          "round": "R2",
+          "frame": "F5",
+          "conditional_probability": 1.0,
+          "formula": "P(R2)= 3/3，仅在上一轮未抽中时成立"
+        }
+      ],
+      "cumulative_inclusion_probability": 1.0,
+      "never_selected_probability": 0.0
+    },
+    {
+      "student": "G08",
+      "through_round": "R2",
+      "r2_design": "exclusion",
+      "steps": [
+        {
+          "round": "R1",
+          "frame": "F2",
+          "conditional_probability": 0.42857142857142855,
+          "note": "已通知复访，抽中机会 3/7"
+        },
+        {
+          "round": "R2",
+          "frame": "F5",
+          "conditional_probability": 0.0,
+          "formula": "上一轮已被随机抽中，本轮条件机会为 0"
+        }
+      ],
+      "cumulative_inclusion_probability": 0.4285714285714286,
+      "never_selected_probability": 0.5714285714285714
+    },
+    {
+      "student": "G09",
+      "through_round": "R2",
+      "r2_design": "exclusion",
+      "steps": [
+        {
+          "round": "R1",
+          "frame": "F2",
+          "conditional_probability": 0.0,
+          "note": "该轮框架内未被抽中且无派单计划"
+        },
+        {
+          "round": "R2",
+          "frame": "F5",
+          "conditional_probability": 1.0,
+          "formula": "P(R2)= 3/3，仅在上一轮未抽中时成立"
+        }
+      ],
+      "cumulative_inclusion_probability": 1.0,
+      "never_selected_probability": 0.0
+    },
+    {
+      "student": "G10",
+      "through_round": "R2",
+      "r2_design": "exclusion",
+      "steps": [
+        {
+          "round": "R1",
+          "frame": "F2",
+          "conditional_probability": 0.42857142857142855,
+          "note": "已通知复访，抽中机会 3/7"
+        },
+        {
+          "round": "R2",
+          "frame": "F5",
+          "conditional_probability": 0.0,
+          "formula": "上一轮已被随机抽中，本轮条件机会为 0"
+        }
+      ],
+      "cumulative_inclusion_probability": 0.4285714285714286,
+      "never_selected_probability": 0.5714285714285714
+    },
+    {
+      "student": "G11",
+      "through_round": "R2",
+      "r2_design": "exclusion",
+      "steps": [
+        {
+          "round": "R1",
+          "frame": "F2",
+          "conditional_probability": 0.0,
+          "note": "该轮框架内未被抽中且无派单计划"
+        },
+        {
+          "round": "R2",
+          "frame": "F5",
+          "conditional_probability": 1.0,
+          "formula": "P(R2)= 3/3，仅在上一轮未抽中时成立"
+        }
+      ],
+      "cumulative_inclusion_probability": 1.0,
+      "never_selected_probability": 0.0
+    }
+  ]
+}

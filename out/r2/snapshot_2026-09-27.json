@@ -1,0 +1,1438 @@
+{
+  "asof": "2026-09-27",
+  "cohort_window": {
+    "start": "2026-06-21",
+    "end": "2026-09-18",
+    "rule": "自毕业次日起 90 天（含首尾）"
+  },
+  "disputed_main_school": [],
+  "identity": {
+    "external_to_student": {
+      "S-A01": "G01",
+      "P-B31": "G03",
+      "S-A51": "G03",
+      "S-C07": "G07",
+      "S-A52": "G05"
+    },
+    "duplicate_codes": {
+      "S-A51": "G03"
+    },
+    "events": [
+      {
+        "type": "code_reassigned",
+        "external": "S-A51",
+        "from_student": "G05",
+        "to_student": "G03",
+        "relation": "duplicate",
+        "mapping": "M5",
+        "asof": "2026-09-25",
+        "note": "重复代号合并：原归属学生的证据需要重新归并"
+      }
+    ],
+    "unresolved_evidence": []
+  },
+  "students": [
+    {
+      "student": "G01",
+      "policy": "Q1",
+      "area": "metro",
+      "label": "qualified_employment",
+      "studies": false,
+      "has_work_evidence": true,
+      "qualifying_segments": [
+        {
+          "start": "2026-07-01",
+          "end": "2026-09-18",
+          "days": 80,
+          "evidence": [
+            "E1"
+          ]
+        }
+      ],
+      "used_evidence": [
+        "E1"
+      ],
+      "used_visits": [],
+      "conflicts": [],
+      "unknown_reasons": [],
+      "clipped_evidence": [],
+      "source": "census",
+      "inference_weight": 1.0,
+      "main_school": "A"
+    },
+    {
+      "student": "G02",
+      "policy": "Q1",
+      "area": "metro",
+      "label": "unknown",
+      "studies": false,
+      "has_work_evidence": false,
+      "qualifying_segments": [],
+      "used_evidence": [],
+      "used_visits": [],
+      "conflicts": [],
+      "unknown_reasons": [
+        "九十天窗内没有任何有效证据"
+      ],
+      "clipped_evidence": [],
+      "source": "unknown",
+      "inference_weight": 0.0,
+      "main_school": "A"
+    },
+    {
+      "student": "G03",
+      "policy": "Q2",
+      "area": "outer",
+      "label": "working_below_standard",
+      "studies": true,
+      "has_work_evidence": true,
+      "qualifying_segments": [],
+      "used_evidence": [
+        "E2",
+        "E3"
+      ],
+      "used_visits": [
+        "V1",
+        "V5"
+      ],
+      "conflicts": [],
+      "unknown_reasons": [
+        "V1: 联系不上（保持未知，不计失业）",
+        "V5: 代号关联待核实的指定复查，不作概率定性"
+      ],
+      "clipped_evidence": [],
+      "source": "census",
+      "inference_weight": 1.0,
+      "main_school": "B"
+    },
+    {
+      "student": "G04",
+      "policy": "Q1",
+      "area": "metro",
+      "label": "unknown",
+      "studies": false,
+      "has_work_evidence": false,
+      "qualifying_segments": [],
+      "used_evidence": [],
+      "used_visits": [],
+      "conflicts": [],
+      "unknown_reasons": [
+        "九十天窗内没有任何有效证据"
+      ],
+      "clipped_evidence": [],
+      "source": "unknown",
+      "inference_weight": 0.0,
+      "main_school": "A"
+    },
+    {
+      "student": "G05",
+      "policy": "Q2",
+      "area": "outer",
+      "label": "qualified_employment",
+      "studies": false,
+      "has_work_evidence": true,
+      "qualifying_segments": [
+        {
+          "start": "2026-06-30",
+          "end": "2026-09-18",
+          "days": 81,
+          "evidence": [
+            "E5"
+          ]
+        }
+      ],
+      "used_evidence": [
+        "E5"
+      ],
+      "used_visits": [
+        "V2"
+      ],
+      "conflicts": [],
+      "unknown_reasons": [
+        "V2: 答复称已通过其他渠道回复，本条不重复定性"
+      ],
+      "clipped_evidence": [
+        "E5"
+      ],
+      "source": "census",
+      "inference_weight": 1.0,
+      "main_school": "B"
+    },
+    {
+      "student": "G06",
+      "policy": "Q2",
+      "area": "outer",
+      "label": "unknown",
+      "studies": false,
+      "has_work_evidence": false,
+      "qualifying_segments": [],
+      "used_evidence": [],
+      "used_visits": [],
+      "conflicts": [],
+      "unknown_reasons": [
+        "九十天窗内没有任何有效证据"
+      ],
+      "clipped_evidence": [],
+      "source": "unknown",
+      "inference_weight": 0.0,
+      "main_school": "B"
+    },
+    {
+      "student": "G07",
+      "policy": "Q2",
+      "area": "outer",
+      "label": "studying",
+      "studies": true,
+      "has_work_evidence": false,
+      "qualifying_segments": [],
+      "used_evidence": [
+        "E4"
+      ],
+      "used_visits": [],
+      "conflicts": [],
+      "unknown_reasons": [],
+      "clipped_evidence": [],
+      "source": "census",
+      "inference_weight": 1.0,
+      "main_school": "B"
+    },
+    {
+      "student": "G08",
+      "policy": "Q2",
+      "area": "outer",
+      "label": "unknown",
+      "studies": false,
+      "has_work_evidence": false,
+      "qualifying_segments": [],
+      "used_evidence": [],
+      "used_visits": [
+        "V3"
+      ],
+      "conflicts": [],
+      "unknown_reasons": [
+        "V3: 本人有说法但窗内无书面佐证"
+      ],
+      "clipped_evidence": [],
+      "source": "unknown",
+      "inference_weight": 0.0,
+      "main_school": "B"
+    },
+    {
+      "student": "G09",
+      "policy": "Q2",
+      "area": "outer",
+      "label": "unknown",
+      "studies": false,
+      "has_work_evidence": false,
+      "qualifying_segments": [],
+      "used_evidence": [],
+      "used_visits": [],
+      "conflicts": [],
+      "unknown_reasons": [
+        "九十天窗内没有任何有效证据"
+      ],
+      "clipped_evidence": [],
+      "source": "unknown",
+      "inference_weight": 0.0,
+      "main_school": "C"
+    },
+    {
+      "student": "G10",
+      "policy": "Q2",
+      "area": "outer",
+      "label": "not_working",
+      "studies": false,
+      "has_work_evidence": false,
+      "qualifying_segments": [],
+      "used_evidence": [],
+      "used_visits": [
+        "V4"
+      ],
+      "conflicts": [],
+      "unknown_reasons": [],
+      "clipped_evidence": [],
+      "source": "survey",
+      "inference_weight": 2.333333333333333,
+      "main_school": "C"
+    },
+    {
+      "student": "G11",
+      "policy": "Q2",
+      "area": "outer",
+      "label": "unknown",
+      "studies": false,
+      "has_work_evidence": false,
+      "qualifying_segments": [],
+      "used_evidence": [],
+      "used_visits": [],
+      "conflicts": [],
+      "unknown_reasons": [
+        "九十天窗内没有任何有效证据"
+      ],
+      "clipped_evidence": [],
+      "source": "unknown",
+      "inference_weight": 0.0,
+      "main_school": "C"
+    },
+    {
+      "student": "G12",
+      "policy": "Q1",
+      "area": "metro",
+      "label": "unknown",
+      "studies": false,
+      "has_work_evidence": false,
+      "qualifying_segments": [],
+      "used_evidence": [],
+      "used_visits": [
+        "V6"
+      ],
+      "conflicts": [],
+      "unknown_reasons": [
+        "V6: 本人有说法但窗内无书面佐证"
+      ],
+      "clipped_evidence": [],
+      "source": "unknown",
+      "inference_weight": 0.0,
+      "main_school": "A"
+    }
+  ],
+  "survey": {
+    "rounds": [
+      "R1",
+      "R2"
+    ],
+    "round_budgets": {
+      "R1": {
+        "budget": 8,
+        "mandatory_cost": 1,
+        "random_cost": 7,
+        "total_cost": 8,
+        "within_budget": true,
+        "note": "先扣当轮指定复查费用，余额用于随机抽访"
+      },
+      "R2": {
+        "budget": 9,
+        "mandatory_cost": 0,
+        "random_cost": 0,
+        "total_cost": 0,
+        "within_budget": true,
+        "note": "先扣当轮指定复查费用，余额用于随机抽访"
+      }
+    },
+    "frames": [
+      {
+        "frame": "F1",
+        "round": "R1",
+        "area": "metro",
+        "stratum": "A-unknown",
+        "kind": "random",
+        "frozen_codes": [
+          "G02",
+          "G03",
+          "G12"
+        ],
+        "dispatched_codes": [
+          "G03",
+          "G12"
+        ],
+        "inclusion_probability": 0.6666666666666666,
+        "recorded_probability": 0.6666666666666666,
+        "probability_consistent": true,
+        "audit": [],
+        "cost_used": 4
+      },
+      {
+        "frame": "F2",
+        "round": "R1",
+        "area": "outer",
+        "stratum": "BC-unknown",
+        "kind": "random",
+        "frozen_codes": [
+          "G05",
+          "G06",
+          "G07",
+          "G08",
+          "G09",
+          "G10",
+          "G11"
+        ],
+        "dispatched_codes": [
+          "G05",
+          "G08",
+          "G10"
+        ],
+        "inclusion_probability": 0.42857142857142855,
+        "recorded_probability": 0.42857142857142855,
+        "probability_consistent": true,
+        "audit": [],
+        "cost_used": 3
+      },
+      {
+        "frame": "F3",
+        "round": "R1",
+        "area": "metro",
+        "stratum": "dispute",
+        "kind": "mandatory",
+        "frozen_codes": [
+          "G03"
+        ],
+        "dispatched_codes": [
+          "G03"
+        ],
+        "inclusion_probability": null,
+        "recorded_probability": null,
+        "probability_consistent": true,
+        "audit": [
+          "F3: 指定复查层，仅供个案核实，不进入抽样推断"
+        ],
+        "cost_used": 1
+      },
+      {
+        "frame": "F4",
+        "round": "R2",
+        "area": "metro",
+        "stratum": "A-unknown",
+        "kind": "random",
+        "frozen_codes": [
+          "G02",
+          "G04",
+          "G12"
+        ],
+        "dispatched_codes": [],
+        "inclusion_probability": 0.0,
+        "recorded_probability": null,
+        "probability_consistent": true,
+        "audit": [],
+        "cost_used": 0
+      },
+      {
+        "frame": "F5",
+        "round": "R2",
+        "area": "outer",
+        "stratum": "BC-unknown",
+        "kind": "random",
+        "frozen_codes": [
+          "G03",
+          "G05",
+          "G06",
+          "G08",
+          "G09",
+          "G10",
+          "G11"
+        ],
+        "dispatched_codes": [],
+        "inclusion_probability": 0.0,
+        "recorded_probability": null,
+        "probability_consistent": true,
+        "audit": [],
+        "cost_used": 0
+      }
+    ]
+  },
+  "estimates": {
+    "school:A": {
+      "level": "school",
+      "school": "A",
+      "program": null,
+      "area": "metro",
+      "denominator": 4,
+      "coverage": 0.25,
+      "coverage_detail": {
+        "census": 1,
+        "survey": 0,
+        "mandatory_only": 0,
+        "unknown": 3
+      },
+      "label_counts": {
+        "qualified_employment": 1,
+        "working_below_standard": 0,
+        "studying": 0,
+        "not_working": 0,
+        "unknown": 3
+      },
+      "qualified_rate_point": 0.25,
+      "qualified_rate_interval_95": [
+        0.25,
+        1.0
+      ],
+      "partial_identification_bounds": [
+        0.25,
+        1.0
+      ],
+      "sampling_standard_error": 0.0,
+      "missing_sources": [
+        {
+          "reason": "V6: 本人有说法但窗内无书面佐证",
+          "count": 1,
+          "students": [
+            "G12"
+          ]
+        },
+        {
+          "reason": "九十天窗内没有任何有效证据",
+          "count": 2,
+          "students": [
+            "G02",
+            "G04"
+          ]
+        }
+      ],
+      "uncovered_students": [
+        "G02",
+        "G04",
+        "G12"
+      ],
+      "dispute_candidates_excluded": [],
+      "frame_contributions": [
+        {
+          "frame": "F1",
+          "survey_qualified_estimate": 0.0,
+          "variance": 0.0,
+          "respondents_used": 0
+        }
+      ],
+      "notes": [
+        "未知去向不记失业；部分识别界假设未知人群达标率在 0~1 之间"
+      ]
+    },
+    "school_program:A:automation": {
+      "level": "school_program",
+      "school": "A",
+      "program": "automation",
+      "area": "metro",
+      "denominator": 2,
+      "coverage": 0.5,
+      "coverage_detail": {
+        "census": 1,
+        "survey": 0,
+        "mandatory_only": 0,
+        "unknown": 1
+      },
+      "label_counts": {
+        "qualified_employment": 1,
+        "working_below_standard": 0,
+        "studying": 0,
+        "not_working": 0,
+        "unknown": 1
+      },
+      "qualified_rate_point": 0.5,
+      "qualified_rate_interval_95": [
+        0.5,
+        1.0
+      ],
+      "partial_identification_bounds": [
+        0.5,
+        1.0
+      ],
+      "sampling_standard_error": 0.0,
+      "missing_sources": [
+        {
+          "reason": "九十天窗内没有任何有效证据",
+          "count": 1,
+          "students": [
+            "G02"
+          ]
+        }
+      ],
+      "uncovered_students": [
+        "G02"
+      ],
+      "dispute_candidates_excluded": [],
+      "frame_contributions": [],
+      "notes": [
+        "未知去向不记失业；部分识别界假设未知人群达标率在 0~1 之间"
+      ]
+    },
+    "school_program:A:service": {
+      "level": "school_program",
+      "school": "A",
+      "program": "service",
+      "area": "metro",
+      "denominator": 2,
+      "coverage": 0.0,
+      "coverage_detail": {
+        "census": 0,
+        "survey": 0,
+        "mandatory_only": 0,
+        "unknown": 2
+      },
+      "label_counts": {
+        "qualified_employment": 0,
+        "working_below_standard": 0,
+        "studying": 0,
+        "not_working": 0,
+        "unknown": 2
+      },
+      "qualified_rate_point": 0.0,
+      "qualified_rate_interval_95": [
+        0.0,
+        1.0
+      ],
+      "partial_identification_bounds": [
+        0.0,
+        1.0
+      ],
+      "sampling_standard_error": 0.0,
+      "missing_sources": [
+        {
+          "reason": "V6: 本人有说法但窗内无书面佐证",
+          "count": 1,
+          "students": [
+            "G12"
+          ]
+        },
+        {
+          "reason": "九十天窗内没有任何有效证据",
+          "count": 1,
+          "students": [
+            "G04"
+          ]
+        }
+      ],
+      "uncovered_students": [
+        "G04",
+        "G12"
+      ],
+      "dispute_candidates_excluded": [],
+      "frame_contributions": [
+        {
+          "frame": "F1",
+          "survey_qualified_estimate": 0.0,
+          "variance": 0.0,
+          "respondents_used": 0
+        }
+      ],
+      "notes": [
+        "未知去向不记失业；部分识别界假设未知人群达标率在 0~1 之间"
+      ]
+    },
+    "school:B": {
+      "level": "school",
+      "school": "B",
+      "program": null,
+      "area": "outer",
+      "denominator": 5,
+      "coverage": 0.6,
+      "coverage_detail": {
+        "census": 3,
+        "survey": 0,
+        "mandatory_only": 0,
+        "unknown": 2
+      },
+      "label_counts": {
+        "qualified_employment": 1,
+        "working_below_standard": 1,
+        "studying": 1,
+        "not_working": 0,
+        "unknown": 2
+      },
+      "qualified_rate_point": 0.2,
+      "qualified_rate_interval_95": [
+        0.2,
+        0.6
+      ],
+      "partial_identification_bounds": [
+        0.2,
+        0.6
+      ],
+      "sampling_standard_error": 0.0,
+      "missing_sources": [
+        {
+          "reason": "V3: 本人有说法但窗内无书面佐证",
+          "count": 1,
+          "students": [
+            "G08"
+          ]
+        },
+        {
+          "reason": "九十天窗内没有任何有效证据",
+          "count": 1,
+          "students": [
+            "G06"
+          ]
+        }
+      ],
+      "uncovered_students": [
+        "G06",
+        "G08"
+      ],
+      "dispute_candidates_excluded": [],
+      "frame_contributions": [
+        {
+          "frame": "F2",
+          "survey_qualified_estimate": 0.0,
+          "variance": 0.0,
+          "respondents_used": 0
+        }
+      ],
+      "notes": [
+        "未知去向不记失业；部分识别界假设未知人群达标率在 0~1 之间"
+      ]
+    },
+    "school_program:B:automation": {
+      "level": "school_program",
+      "school": "B",
+      "program": "automation",
+      "area": "outer",
+      "denominator": 3,
+      "coverage": 0.6667,
+      "coverage_detail": {
+        "census": 2,
+        "survey": 0,
+        "mandatory_only": 0,
+        "unknown": 1
+      },
+      "label_counts": {
+        "qualified_employment": 1,
+        "working_below_standard": 1,
+        "studying": 0,
+        "not_working": 0,
+        "unknown": 1
+      },
+      "qualified_rate_point": 0.3333,
+      "qualified_rate_interval_95": [
+        0.3333,
+        0.6667
+      ],
+      "partial_identification_bounds": [
+        0.3333,
+        0.6667
+      ],
+      "sampling_standard_error": 0.0,
+      "missing_sources": [
+        {
+          "reason": "九十天窗内没有任何有效证据",
+          "count": 1,
+          "students": [
+            "G06"
+          ]
+        }
+      ],
+      "uncovered_students": [
+        "G06"
+      ],
+      "dispute_candidates_excluded": [],
+      "frame_contributions": [
+        {
+          "frame": "F2",
+          "survey_qualified_estimate": 0.0,
+          "variance": 0.0,
+          "respondents_used": 0
+        }
+      ],
+      "notes": [
+        "未知去向不记失业；部分识别界假设未知人群达标率在 0~1 之间"
+      ]
+    },
+    "school_program:B:service": {
+      "level": "school_program",
+      "school": "B",
+      "program": "service",
+      "area": "outer",
+      "denominator": 2,
+      "coverage": 0.5,
+      "coverage_detail": {
+        "census": 1,
+        "survey": 0,
+        "mandatory_only": 0,
+        "unknown": 1
+      },
+      "label_counts": {
+        "qualified_employment": 0,
+        "working_below_standard": 0,
+        "studying": 1,
+        "not_working": 0,
+        "unknown": 1
+      },
+      "qualified_rate_point": 0.0,
+      "qualified_rate_interval_95": [
+        0.0,
+        0.5
+      ],
+      "partial_identification_bounds": [
+        0.0,
+        0.5
+      ],
+      "sampling_standard_error": 0.0,
+      "missing_sources": [
+        {
+          "reason": "V3: 本人有说法但窗内无书面佐证",
+          "count": 1,
+          "students": [
+            "G08"
+          ]
+        }
+      ],
+      "uncovered_students": [
+        "G08"
+      ],
+      "dispute_candidates_excluded": [],
+      "frame_contributions": [
+        {
+          "frame": "F2",
+          "survey_qualified_estimate": 0.0,
+          "variance": 0.0,
+          "respondents_used": 0
+        }
+      ],
+      "notes": [
+        "未知去向不记失业；部分识别界假设未知人群达标率在 0~1 之间"
+      ]
+    },
+    "school:C": {
+      "level": "school",
+      "school": "C",
+      "program": null,
+      "area": "outer",
+      "denominator": 3,
+      "coverage": 0.3333,
+      "coverage_detail": {
+        "census": 0,
+        "survey": 1,
+        "mandatory_only": 0,
+        "unknown": 2
+      },
+      "label_counts": {
+        "qualified_employment": 0,
+        "working_below_standard": 0,
+        "studying": 0,
+        "not_working": 1,
+        "unknown": 2
+      },
+      "qualified_rate_point": 0.0,
+      "qualified_rate_interval_95": [
+        0.0,
+        0.6667
+      ],
+      "partial_identification_bounds": [
+        0.0,
+        0.6667
+      ],
+      "sampling_standard_error": 0.0,
+      "missing_sources": [
+        {
+          "reason": "九十天窗内没有任何有效证据",
+          "count": 2,
+          "students": [
+            "G09",
+            "G11"
+          ]
+        }
+      ],
+      "uncovered_students": [
+        "G09",
+        "G11"
+      ],
+      "dispute_candidates_excluded": [],
+      "frame_contributions": [
+        {
+          "frame": "F2",
+          "survey_qualified_estimate": 0.0,
+          "variance": 0.0,
+          "respondents_used": 1,
+          "note": "仅 1 个随机答复，抽样方差记 0（低估不确定性）"
+        }
+      ],
+      "notes": [
+        "未知去向不记失业；部分识别界假设未知人群达标率在 0~1 之间"
+      ]
+    },
+    "school_program:C:automation": {
+      "level": "school_program",
+      "school": "C",
+      "program": "automation",
+      "area": "outer",
+      "denominator": 2,
+      "coverage": 0.0,
+      "coverage_detail": {
+        "census": 0,
+        "survey": 0,
+        "mandatory_only": 0,
+        "unknown": 2
+      },
+      "label_counts": {
+        "qualified_employment": 0,
+        "working_below_standard": 0,
+        "studying": 0,
+        "not_working": 0,
+        "unknown": 2
+      },
+      "qualified_rate_point": 0.0,
+      "qualified_rate_interval_95": [
+        0.0,
+        1.0
+      ],
+      "partial_identification_bounds": [
+        0.0,
+        1.0
+      ],
+      "sampling_standard_error": 0.0,
+      "missing_sources": [
+        {
+          "reason": "九十天窗内没有任何有效证据",
+          "count": 2,
+          "students": [
+            "G09",
+            "G11"
+          ]
+        }
+      ],
+      "uncovered_students": [
+        "G09",
+        "G11"
+      ],
+      "dispute_candidates_excluded": [],
+      "frame_contributions": [],
+      "notes": [
+        "未知去向不记失业；部分识别界假设未知人群达标率在 0~1 之间"
+      ]
+    },
+    "school_program:C:service": {
+      "level": "school_program",
+      "school": "C",
+      "program": "service",
+      "area": "outer",
+      "denominator": 1,
+      "coverage": 1.0,
+      "coverage_detail": {
+        "census": 0,
+        "survey": 1,
+        "mandatory_only": 0,
+        "unknown": 0
+      },
+      "label_counts": {
+        "qualified_employment": 0,
+        "working_below_standard": 0,
+        "studying": 0,
+        "not_working": 1,
+        "unknown": 0
+      },
+      "qualified_rate_point": 0.0,
+      "qualified_rate_interval_95": [
+        0.0,
+        0.0
+      ],
+      "partial_identification_bounds": [
+        0.0,
+        0.0
+      ],
+      "sampling_standard_error": 0.0,
+      "missing_sources": [],
+      "uncovered_students": [],
+      "dispute_candidates_excluded": [],
+      "frame_contributions": [
+        {
+          "frame": "F2",
+          "survey_qualified_estimate": 0.0,
+          "variance": 0.0,
+          "respondents_used": 1,
+          "note": "仅 1 个随机答复，抽样方差记 0（低估不确定性）"
+        }
+      ],
+      "notes": []
+    }
+  },
+  "comparisons": [
+    {
+      "left": "A",
+      "right": "B",
+      "delta_qualified_rate": 0.05,
+      "delta_interval": [
+        -0.35,
+        0.8
+      ],
+      "left_interval": [
+        0.25,
+        1.0
+      ],
+      "right_interval": [
+        0.2,
+        0.6
+      ],
+      "shared_frames": [],
+      "covariance_note": "抽样框架相互独立",
+      "verdict": "indeterminate",
+      "reason": "区间重合（或差值区间含 0），无法判定先后",
+      "rollback": {
+        "status": "withdrawn",
+        "frames_concerned": [
+          "F1"
+        ],
+        "students": [
+          "G03"
+        ],
+        "reasons": [
+          "身份更正后学生地区口径为 outer，但旧框架 ['F1'] 的冻结地区与新分母不一致，旧抽中机会无法映射到新分母"
+        ]
+      }
+    },
+    {
+      "left": "A",
+      "right": "C",
+      "delta_qualified_rate": 0.25,
+      "delta_interval": [
+        -0.4167,
+        1.0
+      ],
+      "left_interval": [
+        0.25,
+        1.0
+      ],
+      "right_interval": [
+        0.0,
+        0.6667
+      ],
+      "shared_frames": [],
+      "covariance_note": "抽样框架相互独立",
+      "verdict": "indeterminate",
+      "reason": "区间重合（或差值区间含 0），无法判定先后",
+      "rollback": null
+    },
+    {
+      "left": "B",
+      "right": "C",
+      "delta_qualified_rate": 0.2,
+      "delta_interval": [
+        -0.4667,
+        0.6
+      ],
+      "left_interval": [
+        0.2,
+        0.6
+      ],
+      "right_interval": [
+        0.0,
+        0.6667
+      ],
+      "shared_frames": [
+        "F2"
+      ],
+      "covariance_note": "共用抽样框架 ['F2']，差值标准误取保守上界",
+      "verdict": "indeterminate",
+      "reason": "区间重合（或差值区间含 0），无法判定先后",
+      "rollback": {
+        "status": "withdrawn",
+        "frames_concerned": [
+          "F1"
+        ],
+        "students": [
+          "G03"
+        ],
+        "reasons": [
+          "身份更正后学生地区口径为 outer，但旧框架 ['F1'] 的冻结地区与新分母不一致，旧抽中机会无法映射到新分母"
+        ]
+      }
+    },
+    {
+      "left": "A/automation",
+      "right": "B/automation",
+      "delta_qualified_rate": 0.1667,
+      "delta_interval": [
+        -0.1667,
+        0.6667
+      ],
+      "left_interval": [
+        0.5,
+        1.0
+      ],
+      "right_interval": [
+        0.3333,
+        0.6667
+      ],
+      "shared_frames": [],
+      "covariance_note": "抽样框架相互独立",
+      "verdict": "indeterminate",
+      "reason": "区间重合（或差值区间含 0），无法判定先后",
+      "rollback": {
+        "status": "withdrawn",
+        "frames_concerned": [
+          "F1"
+        ],
+        "students": [
+          "G03"
+        ],
+        "reasons": [
+          "身份更正后学生地区口径为 outer，但旧框架 ['F1'] 的冻结地区与新分母不一致，旧抽中机会无法映射到新分母"
+        ]
+      }
+    },
+    {
+      "left": "A/automation",
+      "right": "C/automation",
+      "delta_qualified_rate": 0.5,
+      "delta_interval": [
+        -0.5,
+        1.0
+      ],
+      "left_interval": [
+        0.5,
+        1.0
+      ],
+      "right_interval": [
+        0.0,
+        1.0
+      ],
+      "shared_frames": [],
+      "covariance_note": "抽样框架相互独立",
+      "verdict": "indeterminate",
+      "reason": "区间重合（或差值区间含 0），无法判定先后",
+      "rollback": null
+    },
+    {
+      "left": "B/automation",
+      "right": "C/automation",
+      "delta_qualified_rate": 0.3333,
+      "delta_interval": [
+        -0.6667,
+        0.6667
+      ],
+      "left_interval": [
+        0.3333,
+        0.6667
+      ],
+      "right_interval": [
+        0.0,
+        1.0
+      ],
+      "shared_frames": [],
+      "covariance_note": "抽样框架相互独立",
+      "verdict": "indeterminate",
+      "reason": "区间重合（或差值区间含 0），无法判定先后",
+      "rollback": {
+        "status": "withdrawn",
+        "frames_concerned": [
+          "F1"
+        ],
+        "students": [
+          "G03"
+        ],
+        "reasons": [
+          "身份更正后学生地区口径为 outer，但旧框架 ['F1'] 的冻结地区与新分母不一致，旧抽中机会无法映射到新分母"
+        ]
+      }
+    },
+    {
+      "left": "A/service",
+      "right": "B/service",
+      "delta_qualified_rate": 0,
+      "delta_interval": [
+        -0.5,
+        1.0
+      ],
+      "left_interval": [
+        0.0,
+        1.0
+      ],
+      "right_interval": [
+        0.0,
+        0.5
+      ],
+      "shared_frames": [],
+      "covariance_note": "抽样框架相互独立",
+      "verdict": "indeterminate",
+      "reason": "区间重合（或差值区间含 0），无法判定先后",
+      "rollback": {
+        "status": "withdrawn",
+        "frames_concerned": [
+          "F1"
+        ],
+        "students": [
+          "G03"
+        ],
+        "reasons": [
+          "身份更正后学生地区口径为 outer，但旧框架 ['F1'] 的冻结地区与新分母不一致，旧抽中机会无法映射到新分母"
+        ]
+      }
+    },
+    {
+      "left": "A/service",
+      "right": "C/service",
+      "delta_qualified_rate": 0,
+      "delta_interval": [
+        0.0,
+        1.0
+      ],
+      "left_interval": [
+        0.0,
+        1.0
+      ],
+      "right_interval": [
+        0.0,
+        0.0
+      ],
+      "shared_frames": [],
+      "covariance_note": "抽样框架相互独立",
+      "verdict": "indeterminate",
+      "reason": "区间重合（或差值区间含 0），无法判定先后",
+      "rollback": null
+    },
+    {
+      "left": "B/service",
+      "right": "C/service",
+      "delta_qualified_rate": 0,
+      "delta_interval": [
+        0.0,
+        0.5
+      ],
+      "left_interval": [
+        0.0,
+        0.5
+      ],
+      "right_interval": [
+        0.0,
+        0.0
+      ],
+      "shared_frames": [
+        "F2"
+      ],
+      "covariance_note": "共用抽样框架 ['F2']，差值标准误取保守上界",
+      "verdict": "indeterminate",
+      "reason": "区间重合（或差值区间含 0），无法判定先后",
+      "rollback": {
+        "status": "withdrawn",
+        "frames_concerned": [
+          "F1"
+        ],
+        "students": [
+          "G03"
+        ],
+        "reasons": [
+          "身份更正后学生地区口径为 outer，但旧框架 ['F1'] 的冻结地区与新分母不一致，旧抽中机会无法映射到新分母"
+        ]
+      }
+    }
+  ],
+  "withdrawn_inclusion_pairs": [
+    {
+      "student": "G03",
+      "frame": "F1"
+    }
+  ],
+  "audit": [
+    {
+      "withdrawn_inclusion": {
+        "student": "G03",
+        "frame": "F1"
+      }
+    }
+  ],
+  "change_attribution": [
+    {
+      "student": "G03",
+      "previous_label": "working_below_standard",
+      "current_label": "working_below_standard",
+      "reasons": [
+        "identity_review",
+        "data_completion",
+        "coverage_review"
+      ],
+      "detail": {
+        "identity_events": [
+          {
+            "type": "code_reassigned",
+            "external": "S-A51",
+            "from_student": "G05",
+            "to_student": "G03",
+            "relation": "duplicate",
+            "mapping": "M5",
+            "asof": "2026-09-25",
+            "note": "重复代号合并：原归属学生的证据需要重新归并"
+          }
+        ],
+        "evidence_owner_changed": {
+          "previous": [
+            "E2"
+          ],
+          "current": [
+            "E2",
+            "E3"
+          ]
+        },
+        "new_evidence": [
+          "E3"
+        ],
+        "new_visits": [
+          "V1",
+          "V5"
+        ],
+        "inclusion_changed": {
+          "previous": [],
+          "current": [
+            {
+              "visit": "V1",
+              "round": "R1",
+              "frame": "F1",
+              "kind": "random",
+              "probability": 0.6666666666666666,
+              "reply": "unreachable",
+              "replied": "2026-09-25"
+            },
+            {
+              "visit": "V5",
+              "round": "R1",
+              "frame": "F3",
+              "kind": "mandatory",
+              "probability": null,
+              "reply": "needs-link",
+              "replied": "2026-09-25"
+            }
+          ]
+        },
+        "main_school_confirmed": true
+      }
+    },
+    {
+      "student": "G05",
+      "previous_label": "working_below_standard",
+      "current_label": "qualified_employment",
+      "reasons": [
+        "identity_review",
+        "data_completion",
+        "coverage_review"
+      ],
+      "detail": {
+        "identity_events": [
+          {
+            "type": "code_reassigned",
+            "external": "S-A51",
+            "from_student": "G05",
+            "to_student": "G03",
+            "relation": "duplicate",
+            "mapping": "M5",
+            "asof": "2026-09-25",
+            "note": "重复代号合并：原归属学生的证据需要重新归并"
+          }
+        ],
+        "evidence_owner_changed": {
+          "previous": [
+            "E3"
+          ],
+          "current": [
+            "E5"
+          ]
+        },
+        "new_evidence": [
+          "E5"
+        ],
+        "new_visits": [
+          "V2"
+        ],
+        "inclusion_changed": {
+          "previous": [],
+          "current": [
+            {
+              "visit": "V2",
+              "round": "R1",
+              "frame": "F2",
+              "kind": "random",
+              "probability": 0.42857142857142855,
+              "reply": "already-replied",
+              "replied": "2026-09-24"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "student": "G08",
+      "previous_label": "unknown",
+      "current_label": "unknown",
+      "reasons": [
+        "data_completion",
+        "coverage_review"
+      ],
+      "detail": {
+        "new_evidence": [],
+        "new_visits": [
+          "V3"
+        ],
+        "inclusion_changed": {
+          "previous": [],
+          "current": [
+            {
+              "visit": "V3",
+              "round": "R1",
+              "frame": "F2",
+              "kind": "random",
+              "probability": 0.42857142857142855,
+              "reply": "reachable-no-proof",
+              "replied": "2026-09-25"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "student": "G10",
+      "previous_label": "unknown",
+      "current_label": "not_working",
+      "reasons": [
+        "data_completion",
+        "coverage_review"
+      ],
+      "detail": {
+        "new_evidence": [],
+        "new_visits": [
+          "V4"
+        ],
+        "inclusion_changed": {
+          "previous": [],
+          "current": [
+            {
+              "visit": "V4",
+              "round": "R1",
+              "frame": "F2",
+              "kind": "random",
+              "probability": 0.42857142857142855,
+              "reply": "reachable-no-work",
+              "replied": "2026-09-26"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "student": "G12",
+      "previous_label": "unknown",
+      "current_label": "unknown",
+      "reasons": [
+        "data_completion",
+        "coverage_review"
+      ],
+      "detail": {
+        "new_evidence": [],
+        "new_visits": [
+          "V6"
+        ],
+        "inclusion_changed": {
+          "previous": [],
+          "current": [
+            {
+              "visit": "V6",
+              "round": "R1",
+              "frame": "F1",
+              "kind": "random",
+              "probability": 0.6666666666666666,
+              "reply": "reachable-no-proof",
+              "replied": "2026-09-27"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "rollbacks": [
+    {
+      "comparison": "涉及学生 G03 的院校/专业比较",
+      "students": [
+        "G03"
+      ],
+      "reason": "身份更正后学生地区口径为 outer，但旧框架 ['F1'] 的冻结地区与新分母不一致，旧抽中机会无法映射到新分母",
+      "unusable_frames": [
+        "F1"
+      ],
+      "usable_part": "同框架内未受身份更正影响的其他学生，其抽中机会与权重仍可继续使用",
+      "next_round_basis": "在下一轮按更正后的主校地区重建随机框，对该学生赋予可追溯的新抽中机会"
+    }
+  ]
+}
